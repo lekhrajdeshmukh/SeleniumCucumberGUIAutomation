@@ -29,8 +29,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				,dryRun=false
 				,strict=true
 		)
-public class RunBolWebGuiSuite extends AbstractTestNGCucumberTests {
-	private static Logger LOG = LoggerFactory.getLogger(RunBolWebGuiSuite.class);
+public class RunSeleniumGuiSuite extends AbstractTestNGCucumberTests {
+	private static Logger LOG = LoggerFactory.getLogger(RunSeleniumGuiSuite.class);
 		
 	@AfterClass
 	public static void LOG()
