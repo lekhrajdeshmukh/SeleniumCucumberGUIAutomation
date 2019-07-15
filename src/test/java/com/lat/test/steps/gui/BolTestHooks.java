@@ -1,4 +1,4 @@
-package com.lat.test.steps.gui;
+	package com.lat.test.steps.gui;
 
 
 
@@ -12,6 +12,8 @@ import org.slf4j.LoggerFactory;
 
 
 
+
+import com.aventstack.extentreports.ExtentTest;
 import com.cucumber.listener.Reporter;
 import com.lat.test.framework.helpers.ScreenshotHalper;
 import com.lat.test.framework.helpers.WebDriverHelper;
@@ -22,7 +24,6 @@ import cucumber.api.java.After;
 
 public class BolTestHooks {
 	private static Logger LOG = LoggerFactory.getLogger(BolTestHooks.class);
-	
 	
 	@After
 	public void afterScenario(Scenario scenario) throws Exception
@@ -37,7 +38,7 @@ public class BolTestHooks {
 	            scenario.embed(screenShot, "image/png");
 	            String extentScreenshot = new String(screenShot);
 	            Reporter.addScreenCaptureFromPath(ScreenshotHalper.takeFailureScreenShot());;
-				FreeShippingPages freeShippingPage = new FreeShippingPages();
+	            FreeShippingPages freeShippingPage = new FreeShippingPages();
 				freeShippingPage.removeProductFromCart();
 			}
 			catch(NoClassDefFoundError e)

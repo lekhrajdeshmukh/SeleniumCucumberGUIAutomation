@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="55366" started-at="2019-07-07T13:14:14Z" finished-at="2019-07-07T13:15:09Z">
+  <suite name="Surefire suite" duration-ms="52655" started-at="2019-07-15T11:18:45Z" finished-at="2019-07-15T11:19:38Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.lat.test.RunBolWebGuiSuite@5d624da6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.lat.test.RunSeleniumGuiSuite@5d624da6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="55366" started-at="2019-07-07T13:14:14Z" finished-at="2019-07-07T13:15:09Z">
-      <class name="com.lat.test.RunBolWebGuiSuite">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.lat.test.RunBolWebGuiSuite@5d624da6]" name="setUpClass" is-config="true" duration-ms="480" started-at="2019-07-07T15:14:14Z" finished-at="2019-07-07T15:14:14Z">
+    <test name="Surefire test" duration-ms="52655" started-at="2019-07-15T11:18:45Z" finished-at="2019-07-15T11:19:38Z">
+      <class name="com.lat.test.RunSeleniumGuiSuite">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.lat.test.RunSeleniumGuiSuite@5d624da6]" name="setUpClass" is-config="true" duration-ms="527" started-at="2019-07-15T13:18:45Z" finished-at="2019-07-15T13:18:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.lat.test.RunBolWebGuiSuite@5d624da6]" name="feature" duration-ms="54195" started-at="2019-07-07T15:14:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-07T15:15:09Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.lat.test.RunSeleniumGuiSuite@5d624da6]" name="feature" duration-ms="51258" started-at="2019-07-15T13:18:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-15T13:19:37Z">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [20,95] but found [40,95]]]>
+              <![CDATA[java.lang.AssertionError: expected [NoGratis] but found [Gratis]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [20,95] but found [40,95]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -58,31 +58,31 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.AssertionError: expected [20,95] but found [40,95]
+Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.lat.test.steps.pages.FreeShippingPages.verifyTotalPtoductPrice(FreeShippingPages.java:176)
-	at com.lat.test.steps.gui.FreeShippingSteps.user_verify_total_on_cart_page(FreeShippingSteps.java:73)
-	at ✽.And User verify total "shipping.charge.order.product-price-1" on cart page(freeShipping.feature:12)
+	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:173)
+	at com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)
+	at ✽.Then customer verify shipping cost as "shipping.charge.order.product-freeShipping-2" on cart page(freeShipping.feature:11)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="LOG()[pri:0, instance:com.lat.test.RunBolWebGuiSuite@5d624da6]" name="LOG" is-config="true" duration-ms="73" started-at="2019-07-07T15:15:09Z" finished-at="2019-07-07T15:15:09Z">
+        <test-method status="PASS" signature="LOG()[pri:0, instance:com.lat.test.RunSeleniumGuiSuite@5d624da6]" name="LOG" is-config="true" duration-ms="97" started-at="2019-07-15T13:19:37Z" finished-at="2019-07-15T13:19:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOG -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.lat.test.RunBolWebGuiSuite@5d624da6]" name="tearDownClass" is-config="true" duration-ms="481" started-at="2019-07-07T15:15:09Z" finished-at="2019-07-07T15:15:09Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.lat.test.RunSeleniumGuiSuite@5d624da6]" name="tearDownClass" is-config="true" duration-ms="586" started-at="2019-07-15T13:19:37Z" finished-at="2019-07-15T13:19:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.lat.test.RunBolWebGuiSuite -->
+      </class> <!-- com.lat.test.RunSeleniumGuiSuite -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 import com.lat.test.framework.PageObject;
 import com.lat.test.framework.helpers.Props;
@@ -24,8 +25,9 @@ public class FreeShippingPages extends PageObject{
 	private By currentLanguage 			= By.cssSelector("label.o-drop-down__label");
 	private By selectQuantity 			= By.cssSelector("div.form-select.form-select--two-digits>select#tst_quantity_dropdown");
 	private By addToCartButton 			= By.cssSelector("a[class*='js_floating_basket_btn js_btn_buy']");
-	private By continueOrderBtn 		= By.cssSelector("div.c-btn-tertiary.sb-button.sb-chevron-next.h-btn--full-medium>a");
-	private By continueOrderHeaderBtn	= By.cssSelector("div.add-on-page-header__button.c-btn-primary--large.sb-button.sb-chevron-next>a[href*='/order/basket.html']");
+//	private By continueOrderBtn 		= By.cssSelector("div.c-btn-tertiary.sb-button.sb-chevron-next.h-btn--full-medium>a");
+	private By continueToBasket 		= By.cssSelector("a[href*='basket.html']");
+//	private By continueOrderHeaderBtn	= By.cssSelector("div.add-on-page-header__button.c-btn-primary--large.sb-button.sb-chevron-next>a[href*='/order/basket.html']");
 	private By shippingCostValue		= By.cssSelector("td#tst_shipping_costs");
 	private By removeCartProduct 		= By.cssSelector("div>a#tst_remove_from_basket");
 	private By totalProductPrice 		= By.cssSelector("table:nth-child(1).totals__table>tbody>tr:nth-child(1)>td:nth-child(2)");
@@ -129,7 +131,7 @@ public class FreeShippingPages extends PageObject{
 	
 	public void clickOnContinueOrderBtn()
 	{
-		if(isElementPresent(continueOrderHeaderBtn,2))
+		/*if(isElementPresent(continueOrderHeaderBtn,2))
 		{
 			waitForExpectedElement(continueOrderHeaderBtn).click();
 		}
@@ -139,6 +141,22 @@ public class FreeShippingPages extends PageObject{
 			{
 				waitForExpectedElement(continueOrderBtn).click();
 			}
+		}*/
+		if(isElementPresent(continueToBasket))
+		{
+			List<WebElement> continueButtonLists = webDriver.findElements(continueToBasket);
+			if(continueButtonLists.size() >=2)
+			{
+				continueButtonLists.get(1).click();
+			}
+			else
+			{
+				continueButtonLists.get(0).click();
+			}
+		}
+		else
+		{
+			Assert.assertFalse(true,"Failed to locate element: [ "+continueToBasket+" ]");
 		}
 	}
 	

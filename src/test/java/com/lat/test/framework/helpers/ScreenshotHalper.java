@@ -23,6 +23,7 @@ public class ScreenshotHalper {
 			TakesScreenshot srcShot = (TakesScreenshot)WebDriverHelper.getWebDriver();
 			File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(srcFile, new File(destFile));
+			System.out.println("DEstFIle is: "+destFile);
 			return destFile;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
