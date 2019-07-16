@@ -133,7 +133,7 @@
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
-	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:173)
+	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)
 	at com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)
 	at ✽.Then customer verify shipping cost as &quot;shipping.charge.order.product-freeShipping-2&quot; on cart page(freeShipping.feature:11)
 ... Removed 34 stack frames
@@ -222,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.lat.test.RunSeleniumGuiSuite')
-data.setCell(0, 3, 51258);
+data.setCell(0, 3, 45232);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -262,15 +262,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(As a Customer I order product with price more than of 20 euro Then I expect free shipping for the pr...)</span>
-                <span class="method-start">677 ms</span>
+                <span class="method-start">489 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">LOG</span>
-                <span class="method-start">51958 ms</span>
+                <span class="method-start">45730 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">52055 ms</span>
+                <span class="method-start">45783 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

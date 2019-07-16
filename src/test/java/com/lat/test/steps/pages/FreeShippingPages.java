@@ -131,17 +131,6 @@ public class FreeShippingPages extends PageObject{
 	
 	public void clickOnContinueOrderBtn()
 	{
-		/*if(isElementPresent(continueOrderHeaderBtn,2))
-		{
-			waitForExpectedElement(continueOrderHeaderBtn).click();
-		}
-		else
-		{
-			if(isElementPresent(continueOrderBtn,2))
-			{
-				waitForExpectedElement(continueOrderBtn).click();
-			}
-		}*/
 		if(isElementPresent(continueToBasket))
 		{
 			List<WebElement> continueButtonLists = webDriver.findElements(continueToBasket);

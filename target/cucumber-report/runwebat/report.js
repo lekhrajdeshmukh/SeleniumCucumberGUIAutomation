@@ -207,7 +207,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_is_on_bol_com_page()"
 });
 formatter.result({
-  "duration": 6666764400,
+  "duration": 6087388500,
   "status": "passed"
 });
 formatter.match({
@@ -220,7 +220,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_language_as(String)"
 });
 formatter.result({
-  "duration": 2403036100,
+  "duration": 2375475700,
   "status": "passed"
 });
 formatter.match({
@@ -233,28 +233,28 @@ formatter.match({
   "location": "FreeShippingSteps.customer_search_for_a_product(String)"
 });
 formatter.result({
-  "duration": 1013627101,
+  "duration": 934714200,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_a_search_button()"
 });
 formatter.result({
-  "duration": 1324122199,
+  "duration": 1343864200,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_add_to_cart_button()"
 });
 formatter.result({
-  "duration": 544148800,
+  "duration": 517427900,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_continueOrder_button()"
 });
 formatter.result({
-  "duration": 703784200,
+  "duration": 721751700,
   "status": "passed"
 });
 formatter.match({
@@ -267,7 +267,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_update_the_product_quantity_to(String)"
 });
 formatter.result({
-  "duration": 524469700,
+  "duration": 351787900,
   "status": "passed"
 });
 formatter.match({
@@ -280,7 +280,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 123639300,
+  "duration": 238660600,
   "status": "passed"
 });
 formatter.match({
@@ -293,18 +293,18 @@ formatter.match({
   "location": "FreeShippingSteps.user_verify_total_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 95235501,
+  "duration": 100791700,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.user_remove_the_product_from_the_cart()"
 });
 formatter.result({
-  "duration": 819830700,
+  "duration": 685820900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 449699,
+  "duration": 459200,
   "status": "passed"
 });
 formatter.scenario({
@@ -381,7 +381,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_is_on_bol_com_page()"
 });
 formatter.result({
-  "duration": 459021701,
+  "duration": 453588600,
   "status": "passed"
 });
 formatter.match({
@@ -394,7 +394,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_language_as(String)"
 });
 formatter.result({
-  "duration": 2468903100,
+  "duration": 2282676500,
   "status": "passed"
 });
 formatter.match({
@@ -407,28 +407,28 @@ formatter.match({
   "location": "FreeShippingSteps.customer_search_for_a_product(String)"
 });
 formatter.result({
-  "duration": 1328269200,
+  "duration": 799453800,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_a_search_button()"
 });
 formatter.result({
-  "duration": 1112023999,
+  "duration": 898151100,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_add_to_cart_button()"
 });
 formatter.result({
-  "duration": 917624300,
+  "duration": 888186000,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_continueOrder_button()"
 });
 formatter.result({
-  "duration": 1110850200,
+  "duration": 572952100,
   "status": "passed"
 });
 formatter.match({
@@ -441,7 +441,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_update_the_product_quantity_to(String)"
 });
 formatter.result({
-  "duration": 529843900,
+  "duration": 429526900,
   "status": "passed"
 });
 formatter.match({
@@ -454,7 +454,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 93297000,
+  "duration": 197409500,
   "status": "passed"
 });
 formatter.match({
@@ -467,18 +467,18 @@ formatter.match({
   "location": "FreeShippingSteps.user_verify_total_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 87749200,
+  "duration": 91958700,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.user_remove_the_product_from_the_cart()"
 });
 formatter.result({
-  "duration": 1052566699,
+  "duration": 602463000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 168900,
+  "duration": 195300,
   "status": "passed"
 });
 formatter.scenario({
@@ -555,7 +555,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_is_on_bol_com_page()"
 });
 formatter.result({
-  "duration": 516934600,
+  "duration": 354467300,
   "status": "passed"
 });
 formatter.match({
@@ -568,7 +568,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_language_as(String)"
 });
 formatter.result({
-  "duration": 2379048900,
+  "duration": 2278968300,
   "status": "passed"
 });
 formatter.match({
@@ -581,28 +581,28 @@ formatter.match({
   "location": "FreeShippingSteps.customer_search_for_a_product(String)"
 });
 formatter.result({
-  "duration": 624931499,
+  "duration": 431799000,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_a_search_button()"
 });
 formatter.result({
-  "duration": 1001372301,
+  "duration": 836934500,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_add_to_cart_button()"
 });
 formatter.result({
-  "duration": 741837599,
+  "duration": 729036300,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_continueOrder_button()"
 });
 formatter.result({
-  "duration": 971351600,
+  "duration": 790094300,
   "status": "passed"
 });
 formatter.match({
@@ -615,7 +615,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_update_the_product_quantity_to(String)"
 });
 formatter.result({
-  "duration": 513885299,
+  "duration": 451118100,
   "status": "passed"
 });
 formatter.match({
@@ -628,8 +628,8 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 145552699,
-  "error_message": "java.lang.AssertionError: expected [NoGratis] but found [Gratis]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:173)\r\n\tat com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)\r\n\tat ✽.Then customer verify shipping cost as \"shipping.charge.order.product-freeShipping-2\" on cart page(freeShipping.feature:11)\r\n",
+  "duration": 104124100,
+  "error_message": "java.lang.AssertionError: expected [NoGratis] but found [Gratis]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)\r\n\tat com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)\r\n\tat ✽.Then customer verify shipping cost as \"shipping.charge.order.product-freeShipping-2\" on cart page(freeShipping.feature:11)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -653,7 +653,7 @@ formatter.result({
 formatter.write("https://www.bol.com/nl/order/basket.html");
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1939245200,
+  "duration": 1605989500,
   "status": "passed"
 });
 formatter.scenario({
@@ -730,7 +730,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_is_on_bol_com_page()"
 });
 formatter.result({
-  "duration": 494079800,
+  "duration": 487694900,
   "status": "passed"
 });
 formatter.match({
@@ -743,7 +743,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_language_as(String)"
 });
 formatter.result({
-  "duration": 2515420200,
+  "duration": 2358443700,
   "status": "passed"
 });
 formatter.match({
@@ -756,28 +756,28 @@ formatter.match({
   "location": "FreeShippingSteps.customer_search_for_a_product(String)"
 });
 formatter.result({
-  "duration": 1346316901,
+  "duration": 853772000,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_a_search_button()"
 });
 formatter.result({
-  "duration": 1143637000,
+  "duration": 1035884600,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_add_to_cart_button()"
 });
 formatter.result({
-  "duration": 952977500,
+  "duration": 714202100,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_continueOrder_button()"
 });
 formatter.result({
-  "duration": 1111388500,
+  "duration": 853992100,
   "status": "passed"
 });
 formatter.match({
@@ -790,7 +790,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_update_the_product_quantity_to(String)"
 });
 formatter.result({
-  "duration": 452201700,
+  "duration": 384211400,
   "status": "passed"
 });
 formatter.match({
@@ -803,8 +803,8 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 174942700,
-  "error_message": "java.lang.AssertionError: expected [NoGratis] but found [Gratis]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:173)\r\n\tat com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)\r\n\tat ✽.Then customer verify shipping cost as \"shipping.charge.order.product-freeShipping-3\" on cart page(freeShipping.feature:11)\r\n",
+  "duration": 118049600,
+  "error_message": "java.lang.AssertionError: expected [NoGratis] but found [Gratis]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)\r\n\tat com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)\r\n\tat ✽.Then customer verify shipping cost as \"shipping.charge.order.product-freeShipping-3\" on cart page(freeShipping.feature:11)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -828,7 +828,7 @@ formatter.result({
 formatter.write("https://www.bol.com/nl/order/basket.html");
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 1516387901,
+  "duration": 1572330500,
   "status": "passed"
 });
 formatter.scenario({
@@ -905,7 +905,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_is_on_bol_com_page()"
 });
 formatter.result({
-  "duration": 567256500,
+  "duration": 495430700,
   "status": "passed"
 });
 formatter.match({
@@ -918,7 +918,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_language_as(String)"
 });
 formatter.result({
-  "duration": 2318368400,
+  "duration": 2341282700,
   "status": "passed"
 });
 formatter.match({
@@ -931,28 +931,28 @@ formatter.match({
   "location": "FreeShippingSteps.customer_search_for_a_product(String)"
 });
 formatter.result({
-  "duration": 871453400,
+  "duration": 814733800,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_a_search_button()"
 });
 formatter.result({
-  "duration": 1144778099,
+  "duration": 1224379100,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_add_to_cart_button()"
 });
 formatter.result({
-  "duration": 1343267501,
+  "duration": 832409600,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.customer_click_on_continueOrder_button()"
 });
 formatter.result({
-  "duration": 755302100,
+  "duration": 950768100,
   "status": "passed"
 });
 formatter.match({
@@ -965,7 +965,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_update_the_product_quantity_to(String)"
 });
 formatter.result({
-  "duration": 491015299,
+  "duration": 542593900,
   "status": "passed"
 });
 formatter.match({
@@ -978,7 +978,7 @@ formatter.match({
   "location": "FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 112794101,
+  "duration": 121964300,
   "status": "passed"
 });
 formatter.match({
@@ -991,18 +991,18 @@ formatter.match({
   "location": "FreeShippingSteps.user_verify_total_on_cart_page(String)"
 });
 formatter.result({
-  "duration": 88262800,
+  "duration": 105283400,
   "status": "passed"
 });
 formatter.match({
   "location": "FreeShippingSteps.user_remove_the_product_from_the_cart()"
 });
 formatter.result({
-  "duration": 833224500,
+  "duration": 648925800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 300500,
+  "duration": 113200,
   "status": "passed"
 });
 });

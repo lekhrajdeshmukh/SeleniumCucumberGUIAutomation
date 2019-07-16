@@ -7,13 +7,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
-
-
-
-
-import com.aventstack.extentreports.ExtentTest;
 import com.cucumber.listener.Reporter;
 import com.lat.test.framework.helpers.ScreenshotHalper;
 import com.lat.test.framework.helpers.WebDriverHelper;
@@ -24,7 +17,7 @@ import cucumber.api.java.After;
 
 public class BolTestHooks {
 	private static Logger LOG = LoggerFactory.getLogger(BolTestHooks.class);
-	
+
 	@After
 	public void afterScenario(Scenario scenario) throws Exception
 	{
@@ -37,7 +30,9 @@ public class BolTestHooks {
 	            byte[] screenShot = ((TakesScreenshot) WebDriverHelper.getWebDriver()).getScreenshotAs(OutputType.BYTES);
 	            scenario.embed(screenShot, "image/png");
 	            String extentScreenshot = new String(screenShot);
-	            Reporter.addScreenCaptureFromPath(ScreenshotHalper.takeFailureScreenShot());;
+	            
+	            Reporter.addScreenCaptureFromPath("./"+ScreenshotHalper.takeFailureScreenShot());
+//	            Reporter.addScreenCaptureFromPath(new String(org.apache.commons.codec.binary.Base64.encodeBase64(screenShot)));
 	            FreeShippingPages freeShippingPage = new FreeShippingPages();
 				freeShippingPage.removeProductFromCart();
 			}
