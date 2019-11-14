@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 16 11:07:56 CEST 2019</td>
+<td>Started on:</td><td>Thu Nov 14 15:19:16 CET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46258 ms)</td>
+<tr><td>Total time:</td><td>64 seconds (64871 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.lat.test.RunSeleniumGuiSuite.feature()'><b>feature</b><br>Test class: com.lat.test.RunSeleniumGuiSuite<br>Test method: Runs Cucumber Feature<br>Parameters: As a Customer I order product with price more than of 20 euro Then I expect free shipping for the product</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [20,95] but found [40,95]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
-	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)
-	at com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)
-	at ✽.Then customer verify shipping cost as &quot;shipping.charge.order.product-freeShipping-2&quot; on cart page(freeShipping.feature:11)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825662648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1825662648'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
+Caused by: java.lang.AssertionError: expected [20,95] but found [40,95]
+	at com.lat.test.steps.pages.FreeShippingPages.verifyTotalPtoductPrice(FreeShippingPages.java:205)
+	at com.lat.test.steps.gui.FreeShippingSteps.user_verify_total_on_cart_page(FreeShippingSteps.java:73)
+	at ✽.And User verify total &quot;freeShipping.totalProductPrice.expectedPrice-1&quot; on cart page(freeShipping.feature:13)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564766469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564766469'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [20,95] but found [40,95]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -115,19 +115,19 @@ Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
+Caused by: java.lang.AssertionError: expected [20,95] but found [40,95]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)
-	at com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)
-	at ✽.Then customer verify shipping cost as &quot;shipping.charge.order.product-freeShipping-2&quot; on cart page(freeShipping.feature:11)
+	at com.lat.test.steps.pages.FreeShippingPages.verifyTotalPtoductPrice(FreeShippingPages.java:205)
+	at com.lat.test.steps.gui.FreeShippingSteps.user_verify_total_on_cart_page(FreeShippingSteps.java:73)
+	at ✽.And User verify total &quot;freeShipping.totalProductPrice.expectedPrice-1&quot; on cart page(freeShipping.feature:13)
 </pre></div></td>
-<td>45</td>
-<td>com.lat.test.RunSeleniumGuiSuite@5d624da6</td></tr>
+<td>64</td>
+<td>com.lat.test.RunSeleniumGuiSuite@63355449</td></tr>
 </table><p>
 </body>
 </html>

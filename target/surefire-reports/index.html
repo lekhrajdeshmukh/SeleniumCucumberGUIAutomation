@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,13 +129,13 @@
                   </a> <!-- feature(As a Customer I order product with price more than of 20 euro Then I expect free shipping for the pr...) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(As a Customer I order product with price more than of 20 euro Then I expect free shipping for the product)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [20,95] but found [40,95]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
-	at com.lat.test.steps.pages.FreeShippingPages.verifyShippingCost(FreeShippingPages.java:162)
-	at com.lat.test.steps.gui.FreeShippingSteps.customer_verify_shipping_cost_as_on_cart_page(FreeShippingSteps.java:67)
-	at ✽.Then customer verify shipping cost as &quot;shipping.charge.order.product-freeShipping-2&quot; on cart page(freeShipping.feature:11)
+Caused by: java.lang.AssertionError: expected [20,95] but found [40,95]
+	at com.lat.test.steps.pages.FreeShippingPages.verifyTotalPtoductPrice(FreeShippingPages.java:205)
+	at com.lat.test.steps.gui.FreeShippingSteps.user_verify_total_on_cart_page(FreeShippingSteps.java:73)
+	at ✽.And User verify total &quot;freeShipping.totalProductPrice.expectedPrice-1&quot; on cart page(freeShipping.feature:13)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -158,18 +158,6 @@ Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
       &lt;class name=&quot;com.lat.test.RunSeleniumGuiSuite&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
-  &lt;test name=&quot;Surefire test(failed)&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.lat.test.RunSeleniumGuiSuite&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;setUpClass&quot;/&gt;
-          &lt;include name=&quot;LOG&quot;/&gt;
-          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0&quot;/&gt;
-          &lt;include name=&quot;tearDownClass&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.lat.test.RunSeleniumGuiSuite --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Surefire test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,9 +170,6 @@ Caused by: java.lang.AssertionError: expected [NoGratis] but found [Gratis]
             <ul>
               <li>
                 <span class="test-name">Surefire test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Surefire test(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.lat.test.RunSeleniumGuiSuite')
-data.setCell(0, 3, 45232);
+data.setCell(0, 3, 64259);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -262,15 +247,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(As a Customer I order product with price more than of 20 euro Then I expect free shipping for the pr...)</span>
-                <span class="method-start">489 ms</span>
+                <span class="method-start">261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">LOG</span>
-                <span class="method-start">45730 ms</span>
+                <span class="method-start">64531 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">45783 ms</span>
+                <span class="method-start">64538 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,3 +1,4 @@
+@freeShipping
 Feature: As a Customer I order product with price more than of 20 euro Then I expect free shipping for the product
 
 Scenario Outline: Verify shipping charges is free or not for the orderable product
@@ -12,9 +13,9 @@ Then customer verify shipping cost as "<freeShipping>" on cart page
 And User verify total "<price>" on cart page
 And User remove the product from the cart 
 Examples:
-|	product-name								|	quantity									|	price	|	freeShipping									|
-|	shipping.charge.order.product-name-1		|	shipping.charge.order.product-quantity-1	|	shipping.charge.order.product-price-1	|	shipping.charge.order.product-freeShipping-1	|
-|	shipping.charge.order.product-name-5		|	shipping.charge.order.product-quantity-5	|	shipping.charge.order.product-price-5	|	shipping.charge.order.product-freeShipping-5	|
-|	shipping.charge.order.product-name-2		|	shipping.charge.order.product-quantity-2	|	shipping.charge.order.product-price-2		|	shipping.charge.order.product-freeShipping-2	|
-|	shipping.charge.order.product-name-3		|	shipping.charge.order.product-quantity-3	|	shipping.charge.order.product-price-3	|	shipping.charge.order.product-freeShipping-3	|
-|	shipping.charge.order.product-name-4		|	shipping.charge.order.product-quantity-4	|	shipping.charge.order.product-price-4		|	shipping.charge.order.product-freeShipping-4	|
+|	product-name									|	quantity										|		price										|	freeShipping									|
+|	freeShipping.searchEditBox.productName-1		|	freeShipping.selectQuantity.productQuantity-1	|	freeShipping.totalProductPrice.expectedPrice-1	|	freeShipping.shippingCostValue.shippingCost-1	|
+|	freeShipping.searchEditBox.productName-5		|	freeShipping.selectQuantity.productQuantity-5	|	freeShipping.totalProductPrice.expectedPrice-5	|	freeShipping.shippingCostValue.shippingCost-5	|
+|	freeShipping.searchEditBox.productName-2		|	freeShipping.selectQuantity.productQuantity-2	|	freeShipping.totalProductPrice.expectedPrice-2	|	freeShipping.shippingCostValue.shippingCost-2	|
+|	freeShipping.searchEditBox.productName-3		|	freeShipping.selectQuantity.productQuantity-3	|	freeShipping.totalProductPrice.expectedPrice-3	|	freeShipping.shippingCostValue.shippingCost-3	|
+|	freeShipping.searchEditBox.productName-4		|	freeShipping.selectQuantity.productQuantity-4	|	freeShipping.totalProductPrice.expectedPrice-4	|	freeShipping.shippingCostValue.shippingCost-4	|

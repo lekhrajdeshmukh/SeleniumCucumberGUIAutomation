@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<appender name="roll-by-time-and-size" class="org.apache.log4j.rolling.RollingFileAppender">
+			<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+				<param name="ActiveFileName" value="log4j/roll-by-time-and-size/app.log" />
+				<param name="FileNamePattern"
+					value="log4j/roll-by-time-and-size/app.%d{HH-mm}.%i.log.gz" />
+			</rollingPolicy>
+			<triggeringPolicy
+				class="org.apache.log4j.rolling.SizeBasedTriggeringPolicy">
+				<param name="MaxFileSize" value="100" />
+			</triggeringPolicy>
+			<layout class="org.apache.log4j.PatternLayout">
+				<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n" />
+			</layout>
+		</appender>
+		<File name="FILE" target="app.log" additivity="false"> <PatternLayout 
+			pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" /> <Policies> 
+			<SizeBasedTriggeringPolicy size="5 MB" /> </Policies> </File> 
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
+import java.util.logging.LogManager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,9 @@ import com.lat.test.framework.helpers.WebDriverHelper;
 import cucumber.api.Scenario;
 
 public class FreeShippingPages extends PageObject{
+	
 	private static Logger LOG 			= LoggerFactory.getLogger(FreeShippingPages.class);
+	
 	private By searchEditBox  			= By.id("searchfor");
 	private By searchButton    			= By.cssSelector("button.wsp-search__btn.tst_headerSearchButton>svg");
 	private By currentLanguage 			= By.cssSelector("label.o-drop-down__label");
@@ -27,6 +30,7 @@ public class FreeShippingPages extends PageObject{
 	private By addToCartButton 			= By.cssSelector("a[class*='js_floating_basket_btn js_btn_buy']");
 //	private By continueOrderBtn 		= By.cssSelector("div.c-btn-tertiary.sb-button.sb-chevron-next.h-btn--full-medium>a");
 	private By continueToBasket 		= By.cssSelector("a[href*='basket.html']");
+	private By continueBasketCloseBtn	= By.cssSelector("div.js_close_modal_window.modal__window--close-hitarea");
 //	private By continueOrderHeaderBtn	= By.cssSelector("div.add-on-page-header__button.c-btn-primary--large.sb-button.sb-chevron-next>a[href*='/order/basket.html']");
 	private By shippingCostValue		= By.cssSelector("td#tst_shipping_costs");
 	private By removeCartProduct 		= By.cssSelector("div>a#tst_remove_from_basket");
@@ -40,8 +44,11 @@ public class FreeShippingPages extends PageObject{
 	{
 		try 
 		{
+			LOG.info("Configuration File Defined To Be :: "+System.getProperty("log4j.configurationFile"));
+
 			String targetURL = Props.getProp("site.url");
 			webDriver.get(targetURL);
+			LOG.info("Opening the URL: {}",Props.getProp("site.url"));
 		} catch (Exception e) {
 			throw new Exception(e.getMessage());
 		}
@@ -129,23 +136,38 @@ public class FreeShippingPages extends PageObject{
 		}
 	}
 	
-	public void clickOnContinueOrderBtn()
+	public void clickOnContinueOrderBtn() throws InterruptedException
 	{
-		if(isElementPresent(continueToBasket))
+		if(isElementPresent(continueBasketCloseBtn))
 		{
-			List<WebElement> continueButtonLists = webDriver.findElements(continueToBasket);
-			if(continueButtonLists.size() >=2)
+			if(isElementPresent(continueToBasket))
 			{
-				continueButtonLists.get(1).click();
+				waitForPageLoad();
+				List<WebElement> continueButtonLists = presenceOfAllElementsLocatedBy(continueToBasket);
+				if(continueButtonLists.size() == 1)
+				{
+					Thread.sleep(1000);
+					continueButtonLists = presenceOfAllElementsLocatedBy(continueToBasket);
+				}
+				
+				LOG.info("Size of continueButtonLists is: "+ continueButtonLists.size());
+				if(continueButtonLists.size() >=2)
+				{
+					continueButtonLists.get(1).click();
+				}
+				else
+				{
+					continueButtonLists.get(0).click();
+				}
 			}
 			else
 			{
-				continueButtonLists.get(0).click();
+				Assert.assertFalse(true,"Failed to locate element: [ "+continueToBasket+" ]");
 			}
 		}
 		else
 		{
-			Assert.assertFalse(true,"Failed to locate element: [ "+continueToBasket+" ]");
+			Assert.assertFalse(true,"Failed to locate element: [ "+continueBasketCloseBtn+" ]");
 		}
 	}
 	

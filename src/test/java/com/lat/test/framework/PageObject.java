@@ -7,6 +7,7 @@ import java.util.List;
 import lombok.Getter;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -91,5 +92,11 @@ public class PageObject {
 	 public List<WebElement> presenceOfAllElementsLocatedBy(final By by) 
 	 {
 	        return (new WebDriverWait(webDriver, DRIVER_WAIT_TIME)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+	 }
+	 
+	 public void waitForPageLoad()
+	 {
+		 JavascriptExecutor js = (JavascriptExecutor) webDriver;
+		 wait.until(wd -> js.executeScript("return document.readyState").equals("complete"));
 	 }
 }

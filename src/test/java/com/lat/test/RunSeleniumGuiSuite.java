@@ -10,6 +10,9 @@ import org.testng.annotations.BeforeTest;
 
 
 
+
+
+
 import com.cucumber.listener.Reporter;
 import com.lat.test.framework.helpers.Props;
 
@@ -30,8 +33,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				,strict=true
 		)
 public class RunSeleniumGuiSuite extends AbstractTestNGCucumberTests {
+	
 	private static Logger LOG = LoggerFactory.getLogger(RunSeleniumGuiSuite.class);
-		
 	@AfterClass
 	public static void LOG()
 	{
