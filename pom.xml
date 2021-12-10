@@ -18,7 +18,7 @@
 		<lombok>1.16.16</lombok>
 		<joda-time>2.5</joda-time>
 		<slf4j.version>1.7.28</slf4j.version>
-		<log4j.version>2.12.1</log4j.version>
+		<log4j.version>2.15.0</log4j.version>
 	</properties>
 
 	<profiles>
